@@ -68,7 +68,7 @@ def temp_monthly():
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
 
-# define route for monthly temp
+# define route for stats
 @app.route("/api/v1.0/temp/<start>")
 @app.route("/api/v1.0/temp/<start>/<end>")
 def stats(start=None, end=None):
